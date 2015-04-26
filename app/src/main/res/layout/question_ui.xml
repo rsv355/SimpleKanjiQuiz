@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvIndexForQuestionUI"
+            style="@style/question_ui_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvScoreCountDownForQuestionUI"
+            style="@style/question_ui_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvIndexForQuestionUI"
+            android:layout_centerHorizontal="true"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center|bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvQuestionForQuestionUI"
+                style="@style/question_ui_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btnAns1ForQuestionUI"
+                        style="@style/ans_btn_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/btnAns2ForQuestionUI"
+                        style="@style/ans_btn_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/btnAns3ForQuestionUI"
+                        style="@style/ans_btn_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/btnAns4ForQuestionUI"
+                        style="@style/ans_btn_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Button" />
+
+                    <Button
+                        android:id="@+id/btnAns5ForQuestionUI"
+                        style="@style/ans_btn_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="12dp"
+                        android:text="Button" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

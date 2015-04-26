@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#80000000</color>
+    <color name="white">#FCFAFA</color>
+    <color name="red">#FC0037</color>
+    <color name="blue">#0015FC</color>
+    <color name="black">#000000</color>
+    <color name="blackbrown">#2f2525</color>
+    <color name="darkgrey">#A9A9A9</color>
+    <color name="darkgrey2">#666362</color>
+    <color name="headercolor">#187314</color>
+    <color name="Green">#aac077</color>
+    <color name="yellow">#F4C31E</color>
+    <color name="trueGreen">#00AF33</color>
+    <color name="green">#385E0F</color>
+    <color name="blu">#00AFF0</color>
+    <color name="lightblue">#00bfff</color>
+    <color name="lightgrey">#d3d3d3</color>
+    <color name="bgcolor">#996666</color>
+    <color name="firstrowcolor">#663333</color>
+    <color name="secondrowcolor">#800517</color>
+    <color name="grey"> #bcbcbc</color>
+    <color name="orange">#FF6103</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="ghostwhite">#F8F8FF</color>
+    <color name="lavender">#E6E6FA</color>
+    <color name="lavenderblush">#FFF0F5</color>
+    <color name="skyblue">#87CEEB</color>
+    <color name="salmon">#FA8072</color>
+    <color name="lightcyan">#E0FFFF</color>
+    <color name="aliceblue">#F0F8FF</color>
+    <color name="antiwhite">#FAEBD7</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="aquamarin">#7FFFD4</color>
+    <color name="beige">#F5F5DC</color>
+    <color name="blanchedalmind">#FFEBCD</color>
+    <color name="dwhite">#ddffffff</color>
+    <color name="cwhite">#ccffffff</color>
+    <color name="ltblue">#ffccccff</color>
+    <color name="dgrey">#ddbebebe</color>
+    <color name="cgrey">#ccbebebe</color>
+    <color name="thgrey">#ffd3d3d3</color>
+    <color name="morange">#55ff9900</color>
+    <color name="darkgrey3">#606060</color>
+    <color name="hotpink">#7D2252</color>
+    <color name="pink">#FAAFBE</color>
+    <color name="graynew">#778899</color>
+    <color name="greennew">#347C2C</color>
+    <color name="brown">#2F1700</color>
+    <color name="powerblue">#b0e0e6</color>
+    <color name="rednew">#C11B17</color>
+    <color name="violant">#a020f0</color>
+    <color name="yellow2">#FFFF8C</color>
+    <color name="steelblue">#4682B4</color>
+    <color name="newyellow">#FFCC00</color>
+    <color name="transparent2">#00000000</color>
+    <color name="smog">#ff464D5C</color>
+    <color name="android_robot">#ffA4C639</color>
+    <color name="pastel_green">#ffD1E29C</color>
+    <color name="decay">#ffE4EBCE</color>
+    <color name="ebonics_444">#ffF0F0F0</color>
+    <color name="desh">#383838</color>
+    <color name="desh1">#595454</color>
+    <!-- <color name="midbg">#b3b3b3</color> -->
+    <color name="midbg">#e5e5e5</color>
+    
+    
+    <color name="midheader1">#7f7f7f</color>
+    <color name="midheader2">#e5e5e5</color>
+    <color name="midyellobg">#feff00</color>
+    <color name="midyelloborder">#ffce00</color>
+    <color name="midgreenbg">#65fe06</color>
+    <color name="midgreenborder">#2fcd38</color>
+    <color name="midblubg">#73d4e7</color>
+    <color name="midbluborder">#1268cd</color>
+
+    
+    <color name="actionbar_title_color">#FF553355</color>
+    <color name="actionbar_title_color_old">#FF224894</color>
+    <color name="background_grid1">#FFeeeeee</color>
+    <color name="background_grid1_cell">#33AAAAAA</color>
+    <color name="topic_title_text">#FF0000BB</color>
+    <color name="topic_text">#ffdddddd</color>
+    
+    <color name="midpageselin">#FF66FF</color>
+    <color name="midpageselbr">#CC66CC</color>
+    
+    <color name="midpagein">#CCCACC</color>
+    <color name="midpagebr">#666666</color>
+    
+    <color name="navigation_bg">#d0d3d2</color>
+    <color name="row_press">#17181a</color>
+    <color name="child_row">#292b2d</color>
+</resources>

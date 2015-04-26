@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.phase2.kanjiquiz"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="com.simple.kanjiquiz.SplasScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.simple.kanjiquiz.SelectQuizActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.simple.kanjiquiz.OptionSelectScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.simple.kanjiquiz.AnswerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.simple.kanjiquiz.StartQuiz"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.simple.kanjiquiz.FinishQuizActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Phase 2 Kanji Quiz</string>
+    <string name="header">Kanji Quiz</string>
+    <string name="list_name">List Name(Count)</string>
+    <string name="score">Score</string>
+    <string name="math">MATH</string>
+    <string name="religion">RELIGION</string>
+    <string name="science">SCIENCE</string>
+    <string name="sport">SPORTS</string>
+    <string name="iam">   I AM  </string>
+    <string name="option_a">OPTION A</string>
+    <string name="option_b">OPTION B</string>
+	<string name="finish">Quiz Finish!</string>
+</resources>
