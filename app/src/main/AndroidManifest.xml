@@ -39,6 +39,10 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name="com.simple.kanjiquiz.TopicScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name="com.simple.kanjiquiz.FinishQuizActivity"
             android:screenOrientation="portrait" >
         </activity>

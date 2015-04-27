@@ -57,7 +57,7 @@ public class OptionSelectScreen extends Activity implements OnClickListener {
 			break;
 		}
 
-		Intent i = new Intent(OptionSelectScreen.this, StartQuiz.class);
+		Intent i = new Intent(OptionSelectScreen.this, TopicScreen.class);
 		startActivity(i);
 		OptionSelectScreen.this.finish();
 	}

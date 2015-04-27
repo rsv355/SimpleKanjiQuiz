@@ -132,6 +132,9 @@ public final class R {
         public static final int tvScoreCountDownForQuestionUI=0x7f070012;
         public static final int tvScoreForFinishQuize=0x7f070006;
         public static final int tvYourAnswerForAnswerScreen=0x7f070001;
+        public static final int txtReligion=0x7f07001c;
+        public static final int txtScience=0x7f07001e;
+        public static final int txtTrivia=0x7f07001d;
     }
     public static final class layout {
         public static final int answer_screen=0x7f030000;
@@ -140,6 +143,7 @@ public final class R {
         public static final int option_screen=0x7f030003;
         public static final int question_ui=0x7f030004;
         public static final int splas_screen=0x7f030005;
+        public static final int topic_screen=0x7f030006;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
