@@ -18,4 +18,10 @@ public class Utility {
         int randomInt = rand.nextInt(6);
         return randomInt;
     }
+
+    public static int generateRandomForQuestion(int maxValue){
+        Random rand = new Random();
+        int randomInt = rand.nextInt(maxValue);
+        return randomInt;
+    }
 }

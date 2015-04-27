@@ -37,16 +37,19 @@ public class TopicScreen extends Activity implements OnClickListener {
         switch (v.getId()) {
             case R.id.txtTrivia:
                 Intent i1 = new Intent(TopicScreen.this, StartQuiz.class);
+                i1.putExtra("topic","Math");
                 startActivity(i1);
                 TopicScreen.this.finish();
                 break;
             case R.id.txtReligion:
                 Intent i2 = new Intent(TopicScreen.this, StartQuiz.class);
+                i2.putExtra("topic","Religion");
                 startActivity(i2);
                 TopicScreen.this.finish();
                 break;
             case R.id.txtScience:
                 Intent i3 = new Intent(TopicScreen.this, StartQuiz.class);
+                i3.putExtra("topic","Science");
                 startActivity(i3);
                 TopicScreen.this.finish();
                 break;

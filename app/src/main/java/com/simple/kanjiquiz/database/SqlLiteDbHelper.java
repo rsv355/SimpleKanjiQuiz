@@ -72,7 +72,8 @@ public class SqlLiteDbHelper extends SQLiteOpenHelper {
 	}
 
 	public ArrayList<HashMap<String, String>> getQuestion(String tblName) {
-		ArrayList<HashMap<String, String>> alListOfQuestionDataContainer = new ArrayList<HashMap<String, String>>();
+
+			ArrayList<HashMap<String, String>> alListOfQuestionDataContainer = new ArrayList<HashMap<String, String>>();
 		SQLiteDatabase db = this.getReadableDatabase();
 		Cursor cursor = db.rawQuery("SELECT * FROM " + tblName, null);
 		Log.d("tag", "Count : " + cursor.getCount());

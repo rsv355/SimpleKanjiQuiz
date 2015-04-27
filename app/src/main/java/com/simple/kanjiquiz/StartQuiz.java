@@ -48,9 +48,16 @@ public class StartQuiz extends Activity implements OnClickListener {
 		alQuestionContainer = new ArrayList<HashMap<String, String>>();
 		dbHelper = new SqlLiteDbHelper(this);
 		dbHelper.openDataBase();
-		alQuestionContainer = dbHelper.getQuestion(Utility.mSelectTest);
+
+        String topicName = getIntent().getStringExtra("topic");
+        Utility.mSelectTest = topicName;
+
+        alQuestionContainer = dbHelper.getQuestion(Utility.mSelectTest);
 		if (alQuestionContainer.size() > 0) {
-			random = Utility.generateRandomQuestion();
+			//from krishna
+			// random = Utility.generateRandomQuestion();
+
+            random = Utility.generateRandomForQuestion(alQuestionContainer.size());
 			alAttempQuestion.add(String.valueOf(random));
 		}
 		dbHelper.close();
@@ -86,7 +93,7 @@ public class StartQuiz extends Activity implements OnClickListener {
 	}
 
 	public void setQuestionUI() {
-		Log.d("ans", "Random : " + random);
+		Log.e("ans", "Random : " + random);
 		tvIndex.setText("Question Remaining : " + (10 - count) + " of 10 ");
 		tvScoreCountDown.setText("Correct: " + score + "  Incorrect: "
 				+ incorrect);
@@ -144,7 +151,7 @@ public class StartQuiz extends Activity implements OnClickListener {
 				userSelectIndex = "";
 				nextQuestion();
 			} else {
-				Log.d("tag", "Reslult Code Wrong");
+				Log.e("tag", "Reslult Code Wrong");
 			}
 		} else {
 			Toast.makeText(StartQuiz.this, "Quiz Over!", Toast.LENGTH_LONG)
@@ -154,11 +161,14 @@ public class StartQuiz extends Activity implements OnClickListener {
 	}
 
 	public void nextQuestion() {
-		random = Utility.generateRandomQuestion();
+        //from krishna
+        // random = Utility.generateRandomQuestion();
+        random = Utility.generateRandomForQuestion(alQuestionContainer.size());
+
 		if (alAttempQuestion.contains(String.valueOf(random))) {
 			nextQuestion();
 		} else {
-			Log.d("tag", "Next Question is : " + random);
+			Log.e("tag", "Next Question is : " + random);
 			alAttempQuestion.add(String.valueOf(random));
 			setQuestionUI();
 		}
@@ -173,10 +183,10 @@ public class StartQuiz extends Activity implements OnClickListener {
 			count++;
 			if (correctIndex.equals(userSelectIndex)) {
 				score = score + 1;
-				Log.d("ans", "Correct Answe");
+				Log.e("ans", "Correct Answe");
 			} else {
 				incorrect = incorrect + 1;
-				Log.d("ans", "Not Correct");
+				Log.e("ans", "Not Correct");
 			}
 
 			dbHelper.openDataBase();
