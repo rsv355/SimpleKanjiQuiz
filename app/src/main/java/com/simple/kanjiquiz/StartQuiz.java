@@ -102,15 +102,35 @@ public class StartQuiz extends Activity implements OnClickListener {
 		correctAnswer = alQuestionContainer.get(random).get("correct_ans")
 				.toString();
 		try {
+
+            Log.e("random value",""+random);
 			if (Utility.mOptionAorB == 0) {
-				optionAns = alQuestionContainer.get(random).get("option_b_ans")
-						.toString();
+
+                int rr = Utility.generateRandomForAI();
+                String temp = "ans_"+String.valueOf(rr);
+                Log.e("temp my number",""+rr);
+                Log.e("temp String",temp);
+                optionAns = alQuestionContainer.get(random).get(temp)
+                        .toString();
+
+//				optionAns = alQuestionContainer.get(random).get("option_b_ans")
+//						.toString();
 			} else {
-				optionAns = alQuestionContainer.get(random).get("option_a_ans")
-						.toString();
+
+
+                int rr = Utility.generateRandomForAI();
+                String temp = "ans_"+String.valueOf(rr);
+                Log.e("temp my number",""+rr);
+                Log.e("temp String",temp);
+                optionAns = alQuestionContainer.get(random).get(temp)
+                        .toString();
+
+				/*optionAns = alQuestionContainer.get(random).get("option_a_ans")
+						.toString();*/
 			}
 		} catch (Exception e) {
 			optionAns = "";
+            Log.e("Exce in startwuiz",e.toString());
 			e.printStackTrace();
 		}
 	}

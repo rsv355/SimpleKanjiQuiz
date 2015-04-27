@@ -39,8 +39,11 @@ public class AnswerActivity extends Activity implements OnClickListener {
 						+ correctAnswer.toUpperCase());
 		((TextView) findViewById(R.id.tvYourAnswerForAnswerScreen))
 				.setText("YOUR ANSWER" + "\n \n" + userAnswer.toUpperCase());
-		if (Utility.mOptionAorB == 0) {
-			if (!optionAnswer.equals("")) {
+
+
+     	if (Utility.mOptionAorB == 0) {
+
+            if (!optionAnswer.equals("")) {
 				((TextView) findViewById(R.id.tvOptionAnswerForAnswerScreen))
 						.setText(("Atheist's ANSWER" + "\n \n" + optionAnswer
 								.toUpperCase()));

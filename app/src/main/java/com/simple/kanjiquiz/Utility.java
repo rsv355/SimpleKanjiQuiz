@@ -12,4 +12,10 @@ public class Utility {
 		int i1 = r.nextInt(117 - 0) + 0;
 		return i1;
 	}
+
+    public static int generateRandomForAI(){
+        Random rand = new Random();
+        int randomInt = rand.nextInt(6);
+        return randomInt;
+    }
 }
