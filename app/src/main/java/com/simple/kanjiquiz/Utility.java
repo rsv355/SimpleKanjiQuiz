@@ -15,7 +15,7 @@ public class Utility {
 
     public static int generateRandomForAI(){
         Random rand = new Random();
-        int randomInt = rand.nextInt(6);
+        int randomInt = rand.nextInt(5)+1;
         return randomInt;
     }
 
