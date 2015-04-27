@@ -29,11 +29,18 @@ public class StartQuiz extends Activity implements OnClickListener {
 	private int random, count, score, incorrect;
 	private String userAnswer, correctAnswer, correctIndex, optionAns,
 			userSelectIndex;
+   // private ArrayList<String> Table_Name ;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.question_ui);
+      /*  Table_Name = new ArrayList<String>();
+        Table_Name.add("Math");
+        Table_Name.add("Sport");
+        Table_Name.add("PopCulture");*/
+
+
 		init();
 		bindView();
 		addListner();
@@ -50,7 +57,12 @@ public class StartQuiz extends Activity implements OnClickListener {
 		dbHelper.openDataBase();
 
         String topicName = getIntent().getStringExtra("topic");
-        Utility.mSelectTest = topicName;
+       /* if(topicName.equalsIgnoreCase("Trivia")){
+                int pos = Utility.generateRandomForTableName();
+                Utility.mSelectTest = Table_Name.get(pos);
+        }else {*/
+            Utility.mSelectTest = topicName;
+        //}
 
         alQuestionContainer = dbHelper.getQuestion(Utility.mSelectTest);
 		if (alQuestionContainer.size() > 0) {

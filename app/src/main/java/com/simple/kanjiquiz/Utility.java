@@ -24,4 +24,10 @@ public class Utility {
         int randomInt = rand.nextInt(maxValue);
         return randomInt;
     }
+
+    public static int generateRandomForTableName(){
+        Random rand = new Random();
+        int randomInt = rand.nextInt(3);
+        return randomInt;
+    }
 }
